@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Miha</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: url('https://www.transparenttextures.com/patterns/hearts.png'), linear-gradient(to right, #ff9a9e, #fad0c4);
+            color: white;
+        }
+        .container {
+            margin-top: 10vh;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ff4b5c;
+            color: white;
+            cursor: pointer;
+        }
+        .hidden {
+            display: none;
+        }
+        .flowers {
+            width: 150px;
+            height: auto;
+            margin: 20px;
+        }
+        .flower-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Are you Miha?</h1>
+        <button onclick="showMessage()">Yes, I am Miha</button>
+        
+        <div id="message" class="hidden">
+            <h2>Happy 16th Birthday, Miha! 🎉</h2>
+            <p>My dearest Miha,</p>
+            <p>You are the most beautiful soul I've ever known, and I feel incredibly lucky to have you in my life. On this special day, I want you to know just how much you mean to me.</p>
+            <p>From the moment I met you, my world became brighter, my heart beat faster, and my life felt more meaningful. You are the reason I smile, the warmth in my heart, and the light in my darkest days.</p>
+            <p>Your kindness, laughter, and love make every moment special. No words can truly capture how much I adore you. I promise to cherish and support you always, no matter what life brings our way.</p>
+            <p>May this year bring you endless joy, unforgettable memories, and dreams that come true. Happy Birthday, my love. You are my everything. 💖</p>
+            <div class="flower-container">
+                <img class="flowers" src="https://www.pngall.com/wp-content/uploads/2016/05/Rose-PNG-HD.png" alt="Flower">
+                <img class="flowers" src="https://www.pngall.com/wp-content/uploads/2016/05/Flower-Free-Download-PNG.png" alt="Flower">
+                <img class="flowers" src="https://www.pngall.com/wp-content/uploads/2016/05/Pink-Rose-PNG.png" alt="Flower">
+                <img class="flowers" src="https://www.pngall.com/wp-content/uploads/2016/05/Lotus-PNG-Picture.png" alt="Flower">
+            </div>
+            <audio controls autoplay>
+                <source src="https://www.bensound.com/bensound-music/bensound-sunny.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+    
+    <script>
+        function showMessage() {
+            document.getElementById('message').classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
